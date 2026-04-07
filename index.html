@@ -55,13 +55,18 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
+          <nav class="site-nav" aria-label="GibbWise website">
+            <a href="#features">Features</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#download">Download</a>
+          </nav>
           <img class="site-logo" src="./logo.png" alt="GibbWise logo" />
           <p class="eyebrow">Windows budgeting app</p>
           <h1>GibbWise keeps your month on course.</h1>
           <p class="lede">
-            GibbWise helps you track spending, set category budgets, import CSVs, review recommendations, forecast savings, and keep everything in a local SQLite file on your PC.
+            Budget with local-first records, clear recommendations, savings forecasts, and a Windows app that updates itself when a new release is ready.
           </p>
-          <div class="actions">
+          <div class="actions" id="download">
             <a class="primary-link" href="https://github.com/GibbsLLC/GibbWise-Releases/releases/latest/download/GibbWise-Install-Manager.exe">
               Download for Windows
             </a>
@@ -86,6 +91,10 @@
               <small>Remaining</small>
               <strong>$1,240</strong>
             </div>
+            <div class="recommendation-card">
+              <small>Recommendation</small>
+              <strong>Move $100 into savings and track the goal.</strong>
+            </div>
             <div class="chart-bars">
               <i style="height: 42%"></i>
               <i style="height: 66%"></i>
@@ -102,31 +111,42 @@
         </div>
       </section>
 
-      <section class="feature-grid">
+      <section class="feature-grid" id="features">
         <article>
-          <h2>GibbWise monthly budgets</h2>
+          <h2>Monthly budgets</h2>
           <p>Plan limits for groceries, housing, transport, subscriptions, and the categories you create.</p>
+        </article>
+        <article>
+          <h2>Recommendations</h2>
+          <p>Review income, expenses, budgets, recurring activity, savings behavior, and planning goals in one place.</p>
+        </article>
+        <article>
+          <h2>Savings forecasts</h2>
+          <p>Compare contribution plans, interest rates, and investment assumptions before deciding where your next dollar should go.</p>
         </article>
         <article>
           <h2>Private CSV import</h2>
           <p>Bring in bank exports without connecting live accounts or sending private data to a server.</p>
         </article>
         <article>
-          <h2>Auto-updating Windows app</h2>
+          <h2>Auto-updates</h2>
           <p>Installed copies check GitHub Releases and ask before restarting into a newer version.</p>
         </article>
-        <article>
-          <h2>Recommendations</h2>
-          <p>GibbWise reviews income, spending, budgets, recurring activity, savings behavior, and planning goals to suggest the next useful move.</p>
-        </article>
-        <article>
-          <h2>Savings forecasts</h2>
-          <p>Compare different contribution plans, interest rates, and investment assumptions before deciding where your next dollar should go.</p>
-        </article>
-        <article>
+        <article id="privacy">
           <h2>Local-first records</h2>
           <p>Your budget data stays on your Windows PC in a local SQLite file, with exports available when you want a backup.</p>
         </article>
+      </section>
+
+      <section class="download-panel">
+        <div>
+          <p class="eyebrow">GibbWise for Windows</p>
+          <h2>Start with the install manager.</h2>
+          <p>The installer manager downloads the newest GibbWise release, installs it, and then future updates happen inside the app.</p>
+        </div>
+        <a class="primary-link" href="https://github.com/GibbsLLC/GibbWise-Releases/releases/latest/download/GibbWise-Install-Manager.exe">
+          Download GibbWise
+        </a>
       </section>
     </main>
   </body>
